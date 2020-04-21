@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Foo Bar's Blog</title><link href="jpvmm.github.io/" rel="alternate"></link><link href="jpvmm.github.io/feeds/all.atom.xml" rel="self"></link><id>jpvmm.github.io/</id><updated>2020-04-21T17:37:50Z</updated><subtitle>Web Developer</subtitle></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Foo Bar's Blog</title><link href="https://jpvmm.github.io/" rel="alternate"></link><link href="https://jpvmm.github.io/feeds/all.atom.xml" rel="self"></link><id>https://jpvmm.github.io/</id><updated>2020-04-21T17:40:00Z</updated><subtitle>Web Developer</subtitle></feed>
