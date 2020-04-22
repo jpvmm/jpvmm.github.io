@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://jpvmm.github.io/</loc>
-<lastmod>2020-04-22T19:32:35-00:00</lastmod>
+<lastmod>2020-04-22T19:34:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://jpvmm.github.io/tags.html</loc>
-<lastmod>2020-04-22T19:32:35-00:00</lastmod>
+<lastmod>2020-04-22T19:34:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://jpvmm.github.io/categories.html</loc>
-<lastmod>2020-04-22T19:32:35-00:00</lastmod>
+<lastmod>2020-04-22T19:34:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://jpvmm.github.io/authors.html</loc>
-<lastmod>2020-04-22T19:32:35-00:00</lastmod>
+<lastmod>2020-04-22T19:34:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://jpvmm.github.io/archives.html</loc>
-<lastmod>2020-04-22T19:32:35-00:00</lastmod>
+<lastmod>2020-04-22T19:34:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
@@ -47,20 +47,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://jpvmm.github.io/first-post.html</loc>
-<lastmod>2020-04-22T15:50:00-03:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-</url>
-
-<url>
-<loc>https://jpvmm.github.io/second-post.html</loc>
-<lastmod>2020-04-22T15:50:00-03:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-</url>
-
-<url>
-<loc>https://jpvmm.github.io/third-post.html</loc>
 <lastmod>2020-04-22T15:50:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
