@@ -94,7 +94,7 @@
     <p>
       Publicado em qua 22 abril 2020 na categoria <a href="https://jpvmm.github.io/category/notas.html">notas</a>
 
-        &#8226; 6 min read
+        &#8226; 5 min read
     </p>
   </header>
 
@@ -1214,7 +1214,7 @@ h6:hover .anchor-link {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Notas-Sobre-Redes-Neurais-Convolucionais,-Aprendizado-e-um-pouco-mais">Notas Sobre Redes Neurais Convolucionais, Aprendizado e um pouco mais<a class="anchor-link" href="#Notas-Sobre-Redes-Neurais-Convolucionais,-Aprendizado-e-um-pouco-mais">&#182;</a></h1><p><font size=3>
+<p><font size=3>
     Há um tempo atrás ministrei um pequeno crash course para uma turma de graduação da Faculdade Senai sobre classificação de cães e gatos utilizando Redes Neurais Convolucionais. Nesse curso expliquei um pouco do básico do funcionamento de tais redes, como ela aprende e etc. Como o notebook que criei ficou minimamente decente, resolvi utilizar como post inaugural para o blog. Descobri também que criar notebooks utilizando código e teoria no mesmo lugar é uma forma bastante efetiva de se aprender ou relembrar algum assunto.
     O código utilizado é baseado nesse excelente kernel do kaggle: https://www.kaggle.com/uysimty/keras-cnn-dog-or-cat-classification
     Toda a teoria aplicada aqui é baseada no lendário paper do Yann Lecun: http://yann.lecun.com/exdb/publis/pdf/lecun-99.pdf
@@ -2040,7 +2040,7 @@ Found 5000 validated image filenames belonging to 2 classes.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">epochs</span><span class="o">=</span><span class="mi">3</span> <span class="k">if</span> <span class="n">FAST_RUN</span> <span class="k">else</span> <span class="mi">50</span>
@@ -2055,137 +2055,6 @@ Found 5000 validated image filenames belonging to 2 classes.
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Epoch 1/50
-1333/1333 [==============================] - 372s 279ms/step - loss: 0.7729 - accuracy: 0.5902 - val_loss: 0.5453 - val_accuracy: 0.6264
-Epoch 2/50
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/media/joao/f03b3c1c-b8a0-4168-8dbb-123bf880b803/joao/Projetos/catvsdogs/cats/lib/python3.6/site-packages/keras/callbacks/callbacks.py:1042: RuntimeWarning: Reduce LR on plateau conditioned on metric `val_acc` which is not available. Available metrics are: val_loss,val_accuracy,loss,accuracy,lr
-  (self.monitor, &#39;,&#39;.join(list(logs.keys()))), RuntimeWarning
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre> 797/1333 [================&gt;.............] - ETA: 2:27 - loss: 0.6893 - accuracy: 0.6324</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-40-63cb34b6e89a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      6</span>     validation_steps<span class="ansi-blue-fg">=</span>total_validate<span class="ansi-blue-fg">//</span>batch_size<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">      7</span>     steps_per_epoch<span class="ansi-blue-fg">=</span>total_train<span class="ansi-blue-fg">//</span>batch_size<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">----&gt; 8</span><span class="ansi-red-fg">     </span>callbacks<span class="ansi-blue-fg">=</span>callbacks
-<span class="ansi-green-intense-fg ansi-bold">      9</span> )
-
-<span class="ansi-green-fg">/media/joao/f03b3c1c-b8a0-4168-8dbb-123bf880b803/joao/Projetos/catvsdogs/cats/lib/python3.6/site-packages/keras/legacy/interfaces.py</span> in <span class="ansi-cyan-fg">wrapper</span><span class="ansi-blue-fg">(*args, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">     89</span>                 warnings.warn(&#39;Update your `&#39; + object_name + &#39;` call to the &#39; +
-<span class="ansi-green-intense-fg ansi-bold">     90</span>                               &#39;Keras 2 API: &#39; + signature, stacklevel=2)
-<span class="ansi-green-fg">---&gt; 91</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">return</span> func<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     92</span>         wrapper<span class="ansi-blue-fg">.</span>_original_function <span class="ansi-blue-fg">=</span> func
-<span class="ansi-green-intense-fg ansi-bold">     93</span>         <span class="ansi-green-fg">return</span> wrapper
-
-<span class="ansi-green-fg">/media/joao/f03b3c1c-b8a0-4168-8dbb-123bf880b803/joao/Projetos/catvsdogs/cats/lib/python3.6/site-packages/keras/engine/training.py</span> in <span class="ansi-cyan-fg">fit_generator</span><span class="ansi-blue-fg">(self, generator, steps_per_epoch, epochs, verbose, callbacks, validation_data, validation_steps, validation_freq, class_weight, max_queue_size, workers, use_multiprocessing, shuffle, initial_epoch)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1730</span>             use_multiprocessing<span class="ansi-blue-fg">=</span>use_multiprocessing<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1731</span>             shuffle<span class="ansi-blue-fg">=</span>shuffle<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">-&gt; 1732</span><span class="ansi-red-fg">             initial_epoch=initial_epoch)
-</span><span class="ansi-green-intense-fg ansi-bold">   1733</span> 
-<span class="ansi-green-intense-fg ansi-bold">   1734</span>     <span class="ansi-blue-fg">@</span>interfaces<span class="ansi-blue-fg">.</span>legacy_generator_methods_support
-
-<span class="ansi-green-fg">/media/joao/f03b3c1c-b8a0-4168-8dbb-123bf880b803/joao/Projetos/catvsdogs/cats/lib/python3.6/site-packages/keras/engine/training_generator.py</span> in <span class="ansi-cyan-fg">fit_generator</span><span class="ansi-blue-fg">(model, generator, steps_per_epoch, epochs, verbose, callbacks, validation_data, validation_steps, validation_freq, class_weight, max_queue_size, workers, use_multiprocessing, shuffle, initial_epoch)</span>
-<span class="ansi-green-intense-fg ansi-bold">    218</span>                                             sample_weight<span class="ansi-blue-fg">=</span>sample_weight<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">    219</span>                                             class_weight<span class="ansi-blue-fg">=</span>class_weight<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">--&gt; 220</span><span class="ansi-red-fg">                                             reset_metrics=False)
-</span><span class="ansi-green-intense-fg ansi-bold">    221</span> 
-<span class="ansi-green-intense-fg ansi-bold">    222</span>                 outs <span class="ansi-blue-fg">=</span> to_list<span class="ansi-blue-fg">(</span>outs<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/media/joao/f03b3c1c-b8a0-4168-8dbb-123bf880b803/joao/Projetos/catvsdogs/cats/lib/python3.6/site-packages/keras/engine/training.py</span> in <span class="ansi-cyan-fg">train_on_batch</span><span class="ansi-blue-fg">(self, x, y, sample_weight, class_weight, reset_metrics)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1512</span>             ins <span class="ansi-blue-fg">=</span> x <span class="ansi-blue-fg">+</span> y <span class="ansi-blue-fg">+</span> sample_weights
-<span class="ansi-green-intense-fg ansi-bold">   1513</span>         self<span class="ansi-blue-fg">.</span>_make_train_function<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">-&gt; 1514</span><span class="ansi-red-fg">         </span>outputs <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>train_function<span class="ansi-blue-fg">(</span>ins<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1515</span> 
-<span class="ansi-green-intense-fg ansi-bold">   1516</span>         <span class="ansi-green-fg">if</span> reset_metrics<span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">/media/joao/f03b3c1c-b8a0-4168-8dbb-123bf880b803/joao/Projetos/catvsdogs/cats/lib/python3.6/site-packages/tensorflow_core/python/keras/backend.py</span> in <span class="ansi-cyan-fg">__call__</span><span class="ansi-blue-fg">(self, inputs)</span>
-<span class="ansi-green-intense-fg ansi-bold">   3725</span>         value <span class="ansi-blue-fg">=</span> math_ops<span class="ansi-blue-fg">.</span>cast<span class="ansi-blue-fg">(</span>value<span class="ansi-blue-fg">,</span> tensor<span class="ansi-blue-fg">.</span>dtype<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   3726</span>       converted_inputs<span class="ansi-blue-fg">.</span>append<span class="ansi-blue-fg">(</span>value<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">-&gt; 3727</span><span class="ansi-red-fg">     </span>outputs <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_graph_fn<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>converted_inputs<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   3728</span> 
-<span class="ansi-green-intense-fg ansi-bold">   3729</span>     <span class="ansi-red-fg"># EagerTensor.numpy() will often make a copy to ensure memory safety.</span>
-
-<span class="ansi-green-fg">/media/joao/f03b3c1c-b8a0-4168-8dbb-123bf880b803/joao/Projetos/catvsdogs/cats/lib/python3.6/site-packages/tensorflow_core/python/eager/function.py</span> in <span class="ansi-cyan-fg">__call__</span><span class="ansi-blue-fg">(self, *args, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1549</span>       TypeError<span class="ansi-blue-fg">:</span> For invalid positional<span class="ansi-blue-fg">/</span>keyword argument combinations<span class="ansi-blue-fg">.</span>
-<span class="ansi-green-intense-fg ansi-bold">   1550</span>     &#34;&#34;&#34;
-<span class="ansi-green-fg">-&gt; 1551</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_call_impl<span class="ansi-blue-fg">(</span>args<span class="ansi-blue-fg">,</span> kwargs<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1552</span> 
-<span class="ansi-green-intense-fg ansi-bold">   1553</span>   <span class="ansi-green-fg">def</span> _call_impl<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> args<span class="ansi-blue-fg">,</span> kwargs<span class="ansi-blue-fg">,</span> cancellation_manager<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">/media/joao/f03b3c1c-b8a0-4168-8dbb-123bf880b803/joao/Projetos/catvsdogs/cats/lib/python3.6/site-packages/tensorflow_core/python/eager/function.py</span> in <span class="ansi-cyan-fg">_call_impl</span><span class="ansi-blue-fg">(self, args, kwargs, cancellation_manager)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1589</span>       raise TypeError(&#34;Keyword arguments {} unknown. Expected {}.&#34;.format(
-<span class="ansi-green-intense-fg ansi-bold">   1590</span>           list(kwargs.keys()), list(self._arg_keywords)))
-<span class="ansi-green-fg">-&gt; 1591</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_call_flat<span class="ansi-blue-fg">(</span>args<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>captured_inputs<span class="ansi-blue-fg">,</span> cancellation_manager<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1592</span> 
-<span class="ansi-green-intense-fg ansi-bold">   1593</span>   <span class="ansi-green-fg">def</span> _filtered_call<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> args<span class="ansi-blue-fg">,</span> kwargs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">/media/joao/f03b3c1c-b8a0-4168-8dbb-123bf880b803/joao/Projetos/catvsdogs/cats/lib/python3.6/site-packages/tensorflow_core/python/eager/function.py</span> in <span class="ansi-cyan-fg">_call_flat</span><span class="ansi-blue-fg">(self, args, captured_inputs, cancellation_manager)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1690</span>       <span class="ansi-red-fg"># No tape is watching; skip to running the function.</span>
-<span class="ansi-green-intense-fg ansi-bold">   1691</span>       return self._build_call_outputs(self._inference_function.call(
-<span class="ansi-green-fg">-&gt; 1692</span><span class="ansi-red-fg">           ctx, args, cancellation_manager=cancellation_manager))
-</span><span class="ansi-green-intense-fg ansi-bold">   1693</span>     forward_backward = self._select_forward_and_backward_functions(
-<span class="ansi-green-intense-fg ansi-bold">   1694</span>         args<span class="ansi-blue-fg">,</span>
-
-<span class="ansi-green-fg">/media/joao/f03b3c1c-b8a0-4168-8dbb-123bf880b803/joao/Projetos/catvsdogs/cats/lib/python3.6/site-packages/tensorflow_core/python/eager/function.py</span> in <span class="ansi-cyan-fg">call</span><span class="ansi-blue-fg">(self, ctx, args, cancellation_manager)</span>
-<span class="ansi-green-intense-fg ansi-bold">    543</span>               inputs<span class="ansi-blue-fg">=</span>args<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">    544</span>               attrs<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;executor_type&#34;</span><span class="ansi-blue-fg">,</span> executor_type<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;config_proto&#34;</span><span class="ansi-blue-fg">,</span> config<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">--&gt; 545</span><span class="ansi-red-fg">               ctx=ctx)
-</span><span class="ansi-green-intense-fg ansi-bold">    546</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    547</span>           outputs = execute.execute_with_cancellation(
-
-<span class="ansi-green-fg">/media/joao/f03b3c1c-b8a0-4168-8dbb-123bf880b803/joao/Projetos/catvsdogs/cats/lib/python3.6/site-packages/tensorflow_core/python/eager/execute.py</span> in <span class="ansi-cyan-fg">quick_execute</span><span class="ansi-blue-fg">(op_name, num_outputs, inputs, attrs, ctx, name)</span>
-<span class="ansi-green-intense-fg ansi-bold">     59</span>     tensors = pywrap_tensorflow.TFE_Py_Execute(ctx._handle, device_name,
-<span class="ansi-green-intense-fg ansi-bold">     60</span>                                                op_name<span class="ansi-blue-fg">,</span> inputs<span class="ansi-blue-fg">,</span> attrs<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">---&gt; 61</span><span class="ansi-red-fg">                                                num_outputs)
-</span><span class="ansi-green-intense-fg ansi-bold">     62</span>   <span class="ansi-green-fg">except</span> core<span class="ansi-blue-fg">.</span>_NotOkStatusException <span class="ansi-green-fg">as</span> e<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     63</span>     <span class="ansi-green-fg">if</span> name <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-red-fg">KeyboardInterrupt</span>: </pre>
-</div>
-</div>
-
 </div>
 </div>
 
